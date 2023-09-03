@@ -31,10 +31,10 @@ This guide demonstrates a quick setup for working with Kafka and Python using Fa
    pip install -r requirements.txt
 4. Start a Faust worker:
    ```shell
-   faust -A app worker -l info
+   faust -A worker worker -l info
 5. To produce a Kafka message using the Faust command-line tool, run:
    ```shell
-   faust -A app send hello_world 'Hello Folks, Raheel Here!'
+   faust -A worker send hello_world 'Hello Folks, Raheel Here!'
 
 6. To produce kafka messages using python code
    ```shell
