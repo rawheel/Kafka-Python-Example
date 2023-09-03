@@ -1,15 +1,41 @@
-# Kafka with Python Setup in Less than 5 minutes
+# Kafka with Python Setup in Less than 5 Minutes
 
-Step 1:
-Clone `https://github.com/conduktor/kafka-stack-docker-compose`
+This guide demonstrates a quick setup for working with Kafka and Python using Faust and Docker Compose. You can have Kafka up and running in just a few minutes following these steps.
 
-Run `docker compose -f zk-single-kafka-single.yml up`
+## Step 1: Setting Up Kafka with Docker Compose
 
-Step 2: 
+1. Clone the `kafka-stack-docker-compose` repository:
 
-Clone this project 
+   ```shell
+   git clone https://github.com/conduktor/kafka-stack-docker-compose
+   
+2. Navigate to the repository directory: 
+    ```shell
+    cd kafka-stack-docker-compose
+3. Start Kafka and ZooKeeper containers:
+    ```shell
+    docker compose -f zk-single-kafka-single.yml up
 
-run Pip install -r requirements.txt
+## Step 2: Running the Python Kafka Setup
 
-Up Faust worker `faust -A app worker -l info`
-Produce Message faust -A app send hello_world 'Hello Folks, Raheel Here!'
+1. Clone this project:
+
+   ```shell
+   git clone [repository_url]
+
+2. Navigate to the project directory:
+   ```shell
+   cd [project_directory]
+3. Install project dependencies:
+   ```shell
+   pip install -r requirements.txt
+4. Start a Faust worker:
+   ```shell
+   faust -A app worker -l info
+5. To produce a Kafka message using the Faust command-line tool, run:
+   ```shell
+   faust -A app send hello_world 'Hello Folks, Raheel Here!'
+
+6. To produce kafka messages using python code
+   ```shell
+   python producer.py
