@@ -21,11 +21,11 @@ This guide demonstrates a quick setup for working with Kafka and Python using Fa
 1. Clone this project:
 
    ```shell
-   git clone [repository_url]
+   git clone https://github.com/rawheel/Kafka-Python-Example.git
 
 2. Navigate to the project directory:
    ```shell
-   cd [project_directory]
+   cd Kafka-Python-Example
 3. Install project dependencies:
    ```shell
    pip install -r requirements.txt
